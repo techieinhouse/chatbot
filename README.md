@@ -6,5 +6,5 @@ python chatterbot using flask and speech recognition from html5
 pip install chatterbot
 pip install flask
 
-#broswer compatibility
+#browser compatibility
 speech recognition works only with chrome
