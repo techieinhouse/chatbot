@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Chatbot</title>
+        <link href="./static/lib/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./static/lib/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./static/css/style.css" rel="stylesheet">
+        <link href="./static/css/speech.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Zee's Bot</h1>
+
+                <div class="col-md-12">
+                    <div id="chatPanel" class="panel panel-info">
+                        <div class="panel-heading">
+                            <strong><span class="glyphicon glyphicon-list"></span> Chat History</strong>
+                        </div>
+                        <div class="panel-body fixed-panel" id="MyDivName">
+                            <ul class="media-list">
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <form method="post" id="chatbot-form">
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter Message" name="messageText" id="messageText" autofocus/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info" type="button" id="chatbot-form-btn">SEND <span class="glyphicon glyphicon-send"></span></button>
+                                    </span>
+                                            <div class="speech">
+
+                                             <img onclick="startDictation()" id="z" src="http://www.animatedimages.org/data/media/426/animated-button-image-0484.gif" />
+                                                 <img   onclick="stopDictation()" id="zdd" src="http://www.animatedimages.org/data/media/426/animated-button-image-0484.gif" />
+                                                <label id="la">start speech</label>
+                                                 </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/lib/js/jquery-3.2.0.js"></script>
+        <script src="/static/lib/js/bootstrap.min.js"></script>
+        <script src="/static/js/aja.js"></script>
+     <script src="/static/js/speech.js"></script>
+    <script src="/static/js/speech_stop.js"></script>
+
+
+    </body>
+</html>

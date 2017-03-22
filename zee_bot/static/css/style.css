@@ -1,0 +1,11 @@
+
+            .fixed-panel {
+                min-height: 400px;
+                max-height: 400px;
+                overflow-y: scroll;
+
+            }
+            .media-list {
+                overflow: auto;
+
+            }
